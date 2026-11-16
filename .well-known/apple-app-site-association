@@ -1,0 +1,10 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["64XHYE2529.com.vladyslavternovskyi.musual-app"],
+        "components": [{ "/": "/v/*", "comment": "A Musual visual; the visual itself is after the #" }]
+      }
+    ]
+  }
+}

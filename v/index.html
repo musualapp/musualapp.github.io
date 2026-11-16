@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A visual for Musual</title>
+<meta property="og:title" content="A visual for Musual">
+<meta property="og:description" content="Tap to open it in Musual, where it moves with your music.">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b0b10; color: #fff;
+         font: 17px/1.4 -apple-system, BlinkMacSystemFont, system-ui, sans-serif; text-align: center; }
+  main { padding: 32px 16px; max-width: 360px; }
+  h1 { font-size: 30px; margin: 0 0 8px; }
+  p { color: #a8a8b3; margin: 0 0 28px; }
+  a { display: block; padding: 16px; border-radius: 999px; text-decoration: none; font-weight: 600; margin-bottom: 12px; }
+  .open { background: #fff; color: #000; }
+  .get { background: #23232b; color: #fff; }
+</style>
+</head>
+<body>
+<main>
+  <h1>A visual for Musual</h1>
+  <p>Someone sent you a visual that moves with your music.</p>
+  <a class="open" id="open" href="musual://v">Open in Musual</a>
+  <a class="get" href="https://apps.apple.com/search?term=Musual">Get Musual</a>
+</main>
+<script>
+  // The visual is everything after "#"; it stays in the browser and is handed to the app as is.
+  document.getElementById("open").href = "musual://v" + location.hash;
+</script>
+</body>
+</html>
